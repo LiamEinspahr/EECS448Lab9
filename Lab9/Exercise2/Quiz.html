@@ -1,0 +1,120 @@
+<html>
+ <head>
+ </head>
+<body>
+ <form action="Quiz.html" method="post">
+
+
+
+
+   <p name = "ques1"> Question 1: 1+1 =  <br>
+     <div>
+       <input type="radio" id="q11" name="q1" value="1">
+       <label for="q11">1</label>
+     </div>
+     <div>
+       <input type="radio" id="q12" name="q1" value="2">
+       <label for="q12">2</label>
+     </div>
+     <div>
+       <input type="radio" id="q13" name="q1" value="3">
+       <label for="q13">3</label>
+     </div>
+     <div>
+       <input type="radio" id="q14" name="q1" value="4">
+       <label for="q14">4</label>
+     </div>
+  </p>
+
+  <p name = "ques2"> Question 2: 2*2 =  <br>
+    <div>
+      <input type="radio" id="q21" name="q2" value="1">
+      <label for="q21">1</label>
+    </div>
+    <div>
+      <input type="radio" id="q22" name="q2" value="2">
+      <label for="q22">2</label>
+    </div>
+    <div>
+      <input type="radio" id="q23" name="q2" value="3">
+      <label for="q23">3</label>
+    </div>
+    <div>
+      <input type="radio" id="q24" name="q2" value="4">
+      <label for="q24">4</label>
+    </div>
+ </p>
+
+ <p name = "ques3"> Question 3: 1+2+3+4+5+...+n =  <br>
+   <div>
+     <input type="radio" id="q31" name="q3" value="infinity">
+     <label for="q31">infinity</label>
+   </div>
+   <div>
+     <input type="radio" id="q32" name="q3" value="-(1/12)">
+     <label for="q32">-(1/12)</label>
+   </div>
+   <div>
+     <input type="radio" id="q33" name="q3" value="-(1/8)">
+     <label for="q33">-(1/8)</label>
+   </div>
+   <div>
+     <input type="radio" id="q34" name="q3" value="-(1/16)">
+     <label for="q34">-(1/16)</label>
+   </div>
+</p>
+
+<p name = "ques4"> Question 4: (x^2) + 9 = 0  <br>
+  <div>
+    <input type="radio" id="q41" name="q4" value="-3">
+    <label for="q41">-3</label>
+  </div>
+  <div>
+    <input type="radio" id="q42" name="q4" value="3">
+    <label for="q42">3</label>
+  </div>
+  <div>
+    <input type="radio" id="q43" name="q4" value="3i">
+    <label for="q43">3i</label>
+  </div>
+  <div>
+    <input type="radio" id="q44" name="q4" value="+-3">
+    <label for="q44">+,-3</label>
+  </div>
+</p>
+
+<p name = "ques5"> Question 5: People are standing in a circle waiting to be executed. Counting begins at a specified point in the circle and proceeds around the circle in a specified direction. After a specified number of people are skipped, the next person is executed. The procedure is repeated with the remaining people, starting with the next person, going in the same direction and skipping the same number of people, until only one person remains, and is freed. If there are 41 people total in the circle, at which position should a person stand in order to be the last one alive?<br>
+  <div>
+    <input type="radio" id="q51" name="q5" value="1">
+    <label for="q51">1</label>
+  </div>
+  <div>
+    <input type="radio" id="q52" name="q5" value="41">
+    <label for="q52">41</label>
+  </div>
+  <div>
+    <input type="radio" id="q53" name="q5" value="11">
+    <label for="q53">11</label>
+  </div>
+  <div>
+    <input type="radio" id="q54" name="q5" value="19">
+    <label for="q54">19</label>
+  </div>
+</p>
+
+
+
+<!-- Name: <input type="text" name="name"><br>
+ E-mail: <input type="text" name="email"><br> -->
+
+ <input type="submit">
+ </form>
+</body>
+
+<?php
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+    include("Quiz.php");
+?>
+
+</html>

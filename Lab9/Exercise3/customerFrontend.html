@@ -1,0 +1,70 @@
+<html>
+<script type="text/javascript" src="formChecker.js"></script>
+<link rel="stylesheet" href="style.css">
+<body>
+
+ <p id = "items"> Items for purchase: </p>
+  <ul>
+    <form method="post" action="customerFrontend.html">
+      Apple ($1.00): <input name ="appleQuantity" id ="appleQuantity" value = "0"> <br>
+      Pear ($0.75): <input name ="pearQuantity" id ="pearQuantity" value = "0"> <br>
+      Peach ($0.50): <input name ="peachQuantity" id ="peachQuantity" value = "0"> <br>
+
+    <div>(Please enter quanitities in the input fields provided)</div><br>
+  </ul>
+
+<p id = "shipping"> Shipping Options: </p>
+  <div>
+  <input type="radio" id="free" name="ship" value="0">
+  <label for="free">Free 7 day</label>
+  </div>
+
+  <div>
+  <input type="radio" id="fifty" name="ship" value="fifty">
+  <label for="fifty">$50.00 over night</label>
+  </div>
+
+  <div>
+  <input type="radio" id="five" name="ship" value="five">
+  <label for="five">$5.00 three day</label>
+  </div>
+
+  <br>
+
+  <input type = "button" value = "Reset Fields" onclick = "rstFields()">
+
+  <br>
+  <br>
+  <br>
+
+
+  Username: <input type="text" name="Username" id = "Username" value = "Default@Default.Default"><br>
+  Password: <input type="text" name="Password" id = "Password"><br>
+ <input type="submit" onclick = "checkValues()">
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+</body>
+<?php
+include 'customerBackend.php';
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+?>
+</html>
